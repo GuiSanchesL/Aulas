@@ -16,7 +16,7 @@ public enum TipoCliente {
     }
 
     public static TipoCliente tipoClientePorNomeRelatorio(String nomeRelatorio) {
-      //Nao entendi Quase nada desse metodo aqui, entendi so que usa o value pra buscar alguma coisa
+// Metodo para verificar se o que esta sendo passado eta 100% igual ao que é pedido
         for (TipoCliente tipoCliente : values()) {
             if (tipoCliente.getNomeRelatorio().equals(nomeRelatorio)) {
                 return tipoCliente;
