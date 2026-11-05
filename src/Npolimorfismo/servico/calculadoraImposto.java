@@ -29,6 +29,12 @@ public  class calculadoraImposto {
         System.out.println("Produto:"+produto.getNome());
         System.out.println("Preço:"+produto.getValor());
         System.out.println("Imposto a ser pago "+imposto);
+        if (produto instanceof Tomate ) {
+            //Uso do instanceof para fazer a verificacao, evita no pointer
+            Tomate tomate = (Tomate) produto;
+            System.out.println(tomate.getDataValidade());
+            //Aqui a gente especifica pro inteliji que sabemos que o produto tomate tem o getvalidade, forcando o cast.
+        }
     }
 
 }
