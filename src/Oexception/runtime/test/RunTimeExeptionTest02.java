@@ -9,9 +9,9 @@ public class RunTimeExeptionTest02 {
                 e.printStackTrace();
             }
             System.out.println("Codigo Finalizado");
-        }
-    }
 
+}
+    }
     private static int divisao(int a, int b) {
         if (b == 0) {
             throw new IllegalArgumentException("ARGUMENTO ILEGAL");
